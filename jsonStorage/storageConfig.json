@@ -1,0 +1,4 @@
+{
+    "storageFile":"employees.json",
+    "adapterFile":"personAdapter.js"
+}
