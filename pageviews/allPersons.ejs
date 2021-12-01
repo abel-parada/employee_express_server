@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h2>All persons</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- The following contains JavaScript code under the tags <% %> -->
+                <% result.forEach(person => { %>
+                    <tr>
+                        <td><%= person.id %></td>
+                        <td><%= person.firstname %><%= person.lastname %></td>
+                        <td><%= person.department %></td>
+                        <td><%= person.salary %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

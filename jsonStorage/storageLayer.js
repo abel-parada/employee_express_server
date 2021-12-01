@@ -16,7 +16,7 @@ async function getAllFromStorage(){
 
 async function getOneFromStorage(id){
     const storage = await readStorage(storageFilePath);
-    return storage.find(item=>item.id == id) || null;
+    return storage.find(item=>item.id == id) || null; // we put == instead of === because the variables we are comparing may be of different type (example, number to string)
 }
 
 async function addToStorage(newObject){
