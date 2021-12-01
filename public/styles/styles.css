@@ -1,3 +1,45 @@
-h1 {
+main,
+form {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+input[readonly] {
+  background-color: lightgrey;
+}
+
+table {
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+table,
+th,
+td {
+  border: solid black 1px;
+  padding: 1rem;
+}
+
+thead {
+  background-color: yellow;
+}
+
+button {
+  font-family: sans-serif;
+  width: 13em;
+  height: 2em;
+}
+
+p.info {
+  border: solid green 2px;
+  padding: 1em;
+}
+p.error {
+  border: dashed red 2px;
+  padding: 1em;
+}
+
+h1.error {
   color: red;
 }

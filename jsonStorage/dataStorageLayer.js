@@ -23,7 +23,7 @@ module.exports = class Datastorage{
                 reject(MESSAGES.NOT_FOUND('--empty--'));
             }
             else {
-                const resolve = await getOneFromStorage(id);
+                const result = await getOneFromStorage(id);
                 if (result){
                     resolve(result);
                 }
@@ -37,7 +37,7 @@ module.exports = class Datastorage{
     insert(employee){
         return new Promise(async (resolve, reject) =>{
             if(employee){
-                if(!id){
+                if(!employee.id){
                     reject(MESSAGES.NOT_INSERTED);
                 }
                 else if (await getOneFromStorage(employee.id)){
